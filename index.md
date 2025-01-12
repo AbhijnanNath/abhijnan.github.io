@@ -11,6 +11,7 @@ What happens when AI begins to truly understand and align with human intentions?
 - 🎓 Received PhD Candidacy with Distinction, December 2024
 - 🏆 Awarded Evolutionary Computing and AI Graduate Fellowship 2024
 - 📝 Paper accepted at NAACL 2024 (Oral)
+- 📝 Paper accepted at Findings of EMNLP 2024
 - 📝 Paper accepted at LREC-COLING 2024
 
 
