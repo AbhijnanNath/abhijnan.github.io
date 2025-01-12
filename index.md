@@ -4,7 +4,11 @@ layout: default
 
 # Welcome!
 
-I am a PhD student in Computer Science (AI/NLP) at Colorado State University, working with [Dr. Nikhil Krishnaswamy](https://www.nikhilkrishnaswamy.com/). My research focuses on Language Models, Cross-Document Event Coreference, and Preference Learning.
+I am a PhD student in Computer Science (AI/NLP) at Colorado State University, working with [Dr. Nikhil Krishnaswamy](https://www.nikhilkrishnaswamy.com/). 
+ 
+
+What happens when AI begins to truly understand and align with human intentions? That’s the question I aim to answer. I specialize in developing next-generation generative AI systems that are not only intelligent but also deeply aligned with human values. My work spans aligning summaries of doctor-patient interactions to designing AI "thought-partners" for enhanced collaboration, with a focus on safety, alignment, and usability. By combining rigorous alignment methodologies with an emphasis on human-centric design, I strive to create systems that are efficient, trustworthy, and accessible
+
 
 ## News
 - 🎉 Best Paper Award at Educational Data Mining (EDM) 2024
