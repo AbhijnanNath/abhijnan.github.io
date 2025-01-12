@@ -5,5 +5,6 @@ plugins:
   - jekyll-remote-theme
   - jekyll-seo-tag
 logo: /assets/img/profile.png
+viewport: width=device-width, initial-scale=1
 show_downloads: false
 google_analytics: G-0WRNB6ZHTP
