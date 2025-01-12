@@ -1,9 +1,8 @@
+title: "Abhijnan Nath"
+description: "AI/NLP Researcher | PhD Student | Publications and Projects"
 theme: jekyll-theme-minimal
 plugins:
   - jekyll-remote-theme # Ensure this plugin is enabled
-title: "Abhijnan Nath"
-description: "AI/NLP Researcher | PhD Student | Publications and Projects"
-show_downloads: true
-google_analytics: G-0WRNB6ZHTP
 header_pages:
   - publications.md
+google_analytics: G-0WRNB6ZHTP
