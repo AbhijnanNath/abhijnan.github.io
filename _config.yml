@@ -1,8 +1,8 @@
+remote_theme: pages-themes/minimal@v0.2.0
 title: "Abhijnan Nath"
 description: "AI/NLP Researcher | PhD Student | Publications and Projects"
-theme: jekyll-theme-minimal
 plugins:
-  - jekyll-remote-theme # Ensure this plugin is enabled
+  - jekyll-remote-theme
 header_pages:
   - publications.md
 google_analytics: G-0WRNB6ZHTP
