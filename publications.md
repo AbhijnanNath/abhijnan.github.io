@@ -1,6 +1,9 @@
 ---
 layout: default
 title: Publications
+github:
+  is_project_page: false
+  is_user_page: false
 ---
 
 # Publications
@@ -18,7 +21,7 @@ title: Publications
 3. **“Any Other Thoughts, Hedgehog?” Linking Deliberation Chains in Collaborative Dialogues**  
    *Abhijnan Nath*, Videep Venkatesha, Mariah Bradford, Avyakta Chelle, Austin Collin Youngren, Carlos Mabrey, Nathaniel Blanchard, Nikhil Krishnaswamy  
    *(Accepted at Findings of EMNLP 2024)*  
-   [Paper](https://www.nikhilkrishnaswamy.com/assets/docs/pdfs/EMNLP-2024-Nath.pdf)
+   [Paper](https://aclanthology.org/2024.findings-emnlp.305/)
 
 4. **Okay, Let’s Do This! Modeling Event Coreference with Generated Rationales and Knowledge Distillation**  
    *Abhijnan Nath*, Shadi Manafi, Avyakta Chelle, Nikhil Krishnaswamy  

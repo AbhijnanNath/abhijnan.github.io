@@ -42,3 +42,16 @@ body {
     font-size: 14px;
   }
 }
+
+.selected-pubs img {
+  vertical-align: middle;
+  margin: 0 4px;
+}
+
+.selected-pubs a {
+  text-decoration: none;
+}
+
+.selected-pubs a:hover {
+  text-decoration: underline;
+}
