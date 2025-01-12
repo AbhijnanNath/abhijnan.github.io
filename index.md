@@ -13,30 +13,26 @@ What happens when AI begins to truly understand and align with human intentions?
 - 📝 Paper accepted at NAACL 2024 (Oral)
 - 📝 Paper accepted at LREC-COLING 2024
 
+
 ## Selected Publications
+
 <div class="selected-pubs">
 
-📄 **Simultaneous Reward Distillation and Preference Learning: Get You a Language Model Who Can Do Both**  
+**[Simultaneous Reward Distillation and Preference Learning: Get You a Language Model Who Can Do Both](https://arxiv.org/pdf/2410.08458)**  
 *Under Review*  
-A novel approach to combining reward learning with preference optimization in language models.  
-[Preprint](https://arxiv.org/pdf/2410.08458)
+A novel approach to combining reward learning with preference optimization in language models.
 
-📄 **DPL: Diverse Preference Learning Without A Reference Model**  
+**[DPL: Diverse Preference Learning Without A Reference Model](https://drive.google.com/file/d/1dFI_N0zgXF4YkawaIJqqoyEKn2IU9xEO/view?usp=sharing)**  
 *Under Review*  
-Pioneering work on preference learning that eliminates the need for reference models while maintaining diversity.  
-[Preprint](https://drive.google.com/file/d/1dFI_N0zgXF4YkawaIJqqoyEKn2IU9xEO/view?usp=sharing)
+Pioneering work on preference learning that eliminates the need for reference models while maintaining diversity.
 
-🏆 **Okay, Let's Do This! Modeling Event Coreference with Generated Rationales**  
-*NAACL 2024 (Oral)*  
-Novel approach to event coreference using LLM-generated rationales and knowledge distillation.  
-[Paper](https://arxiv.org/pdf/2404.03196.pdf) | 
-[<img src="https://img.shields.io/badge/Code-GitHub-blue?logo=github" alt="GitHub">](https://github.com/csu-signal/llama_cdcr)
+**[Okay, Let's Do This! Modeling Event Coreference with Generated Rationales](https://arxiv.org/pdf/2404.03196.pdf)** [[Code]](https://github.com/csu-signal/llama_cdcr)  
+*NAACL 2024 (Oral)* 🏆  
+Novel approach to event coreference using LLM-generated rationales and knowledge distillation.
 
-🌟 **"Any Other Thoughts, Hedgehog?" Linking Deliberation Chains**  
-*Findings of EMNLP 2024*  
-Proposed a novel task of linking reasoning chains in multi-agent collaborative dialogues.  
-[Paper](https://www.nikhilkrishnaswamy.com/assets/docs/pdfs/EMNLP-2024-Nath.pdf) | 
-[<img src="https://img.shields.io/badge/Code-GitHub-blue?logo=github" alt="GitHub">](https://github.com/csu-signal/ProbingDelibration)
+**["Any Other Thoughts, Hedgehog?" Linking Deliberation Chains](https://www.nikhilkrishnaswamy.com/assets/docs/pdfs/EMNLP-2024-Nath.pdf)** [[Code]](https://github.com/csu-signal/ProbingDelibration)  
+*Findings of EMNLP 2024* ⭐  
+Proposed a novel task of linking reasoning chains in multi-agent collaborative dialogues.
 
 </div>
 
