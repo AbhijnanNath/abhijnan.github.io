@@ -27,14 +27,15 @@ What happens when AI begins to truly understand and align with human intentions?
 * **[Okay, Let's Do This! Modeling Event Coreference with Generated Rationales](https://arxiv.org/pdf/2404.03196.pdf)** 🏆  
   *NAACL 2024 (Oral)*  
   Novel approach to event coreference using LLM-generated rationales and knowledge distillation.  
-  [[Code](https://github.com/csu-signal/llama_cdcr)]
+  [Code](https://github.com/csu-signal/llama_cdcr)
 
 * **["Any Other Thoughts, Hedgehog?" Linking Deliberation Chains](https://www.nikhilkrishnaswamy.com/assets/docs/pdfs/EMNLP-2024-Nath.pdf)** ⭐  
   *Findings of EMNLP 2024*  
   Proposed a novel task of linking reasoning chains in multi-agent collaborative dialogues.  
-  [[Code](https://github.com/csu-signal/ProbingDelibration)]
+  [Code](https://github.com/csu-signal/ProbingDelibration)
 
 [View all publications →](publications)
+
 
 ## Quick Links
 - [Publications](publications.md)
