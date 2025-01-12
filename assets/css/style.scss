@@ -55,3 +55,8 @@ body {
 .selected-pubs a:hover {
   text-decoration: underline;
 }
+
+/* Make the font size smaller for content in the index.md page */
+.index-content {
+    font-size: 0.9em; /* Adjust this value as needed */
+}

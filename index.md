@@ -2,21 +2,22 @@
 layout: default
 ---
 # Welcome!
-I am a PhD candidate in Computer Science (AI/NLP) at Colorado State University, working with [Dr. Nikhil Krishnaswamy](https://www.nikhilkrishnaswamy.com/) at the [SIGNAL Lab](https://www.signallab.ai/people). In the summer and fall of 2024, I worked with [Optum AI](https://www.optumlabs.com/work/artificial-intelligence.html) on their LLM-alignment team, focusing on efficient preference alignment for healthcare applications. I am currently looking for Full-Time Research Scientist/Machine Learning Engineer positions and internships. 
+<div class="index-content">
 
-What happens when AI begins to truly understand and align with human intentions? That's the question I aim to answer. I specialize in developing next-generation generative AI systems (or LLMs) that are not only intelligent but also deeply aligned with human values. My work spans aligning summaries of doctor-patient interactions to designing AI "thought-partners" for enhanced collaboration, with a focus on safety, alignment, and usability. For example, most users these days have a "frictionless" experience using LLMs---but my research asks the question of whether it is possible to train and align "frictive agents---LLMs that can cross-examine and track ToM-based beliefs in multi-user settings. 
+I am a PhD candidate in Computer Science (AI/NLP) at Colorado State University, working with [Dr. Nikhil Krishnaswamy](https://www.nikhilkrishnaswamy.com/) at the [SIGNAL Lab](https://www.signallab.ai/people). During the summer and fall of 2024, I worked with [Optum AI](https://www.optumlabs.com/work/artificial-intelligence.html) on their LLM-alignment team, focusing on efficient preference alignment for healthcare applications. I am currently seeking Full-Time Research Scientist or Machine Learning Engineer positions and internships.
 
-Previously, I worked on developing AI systems for natural language understanding (NLU) and computational semantics, spanning tasks like coreference resolution, multimodal information extraction, and dialogue modeling—with a focus on building efficient, small-scale, and more accessible systems built on top of transformer-based language models. For instance, I led the development of **[AxomiyaBERTa](https://aclanthology.org/2023.findings-acl.739/)**, the first monolingual Assamese transformer-based language model, which set new benchmarks for low-resource language processing by leveraging Assamese-specific phonological signals in transfer learning. 
+# My Research
+What happens when AI begins to truly understand and align with human intentions? That's the question I aim to answer. I specialize in developing next-generation generative AI systems (LLMs) that are not only intelligent but also deeply aligned with human values. My work includes aligning summaries of doctor-patient interactions and designing AI "thought-partners" for enhanced collaboration, with a focus on safety, alignment, and usability. 
 
+Most users today experience "frictionless" interactions with LLMs, but my research explores training and aligning "frictive agents"—LLMs that can cross-examine and track ToM-based (Theory of Mind) beliefs in multi-user settings. I also led the development of **[AxomiyaBERTa](https://aclanthology.org/2023.findings-acl.739/)**, the first monolingual Assamese transformer-based language model, setting benchmarks for low-resource language processing by leveraging Assamese-specific phonological signals in transfer learning.
 
 ## News
-- 🎉 Best Paper Award at Educational Data Mining (EDM) 2024
-- 🎓 Received PhD Candidacy with Distinction, December 2024
-- 🏆 Awarded Evolutionary Computing and AI Graduate Fellowship 2024
-- 📝 Paper accepted at NAACL 2024 (Oral)
-- 📝 Paper accepted at Findings of EMNLP 2024
-- 📝 Paper accepted at LREC-COLING 2024
-
+- 🎉 **Best Paper Award** at Educational Data Mining (EDM) 2024
+- 🎓 **Received PhD Candidacy** with Distinction, December 2024
+- 🏆 **Awarded Evolutionary Computing and AI Graduate Fellowship**, 2024
+- 📝 **Paper accepted at NAACL 2024** (Oral)
+- 📝 **Paper accepted at Findings of EMNLP 2024**
+- 📝 **Paper accepted at LREC-COLING 2024**
 
 ## Selected Publications
 
@@ -47,10 +48,12 @@ Previously, I worked on developing AI systems for natural language understanding
 - [Google Scholar](https://scholar.google.com/citations?user=J9FdsyYAAAAJ&hl=en)
 - [GitHub](https://github.com/AbhijnanNath)
 - [LinkedIn](https://linkedin.com/in/abhijnan-nath-737727169)
-- [Youtube Channel](https://www.youtube.com/@avign5291)
+- [YouTube Channel](https://www.youtube.com/@avign5291)
 
 ## Contact
 Email: abhijnan.nath@colostate.edu  
 Department of Computer Science  
 Colorado State University  
 Fort Collins, CO 80523
+
+</div>
