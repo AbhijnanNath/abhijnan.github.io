@@ -44,7 +44,7 @@ What happens when AI begins to truly understand and align with human intentions?
 - [Google Scholar](https://scholar.google.com/citations?user=J9FdsyYAAAAJ&hl=en)
 - [GitHub](https://github.com/AbhijnanNath)
 - [LinkedIn](https://linkedin.com/in/abhijnan-nath-737727169)
-- [Youtube Channel](https://linkedin.com/in/abhijnan-nath-737727169)
+- [Youtube Channel](https://www.youtube.com/@avign5291)
 
 ## Contact
 Email: abhijnan.nath@colostate.edu  
