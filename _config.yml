@@ -1,8 +1,9 @@
-remote_theme: pages-themes/minimal@v0.2.0
 title: "Abhijnan Nath"
-description: "AI/NLP Researcher | PhD Student | Publications and Projects"
+description: "AI/NLP Researcher | PhD Student"
+remote_theme: pages-themes/minimal@v0.2.0
 plugins:
   - jekyll-remote-theme
-header_pages:
-  - publications.md
+  - jekyll-seo-tag
+logo: /assets/img/profile.png
+show_downloads: false
 google_analytics: G-0WRNB6ZHTP
