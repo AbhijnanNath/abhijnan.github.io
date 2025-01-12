@@ -20,10 +20,10 @@ What happens when AI begins to truly understand and align with human intentions?
 ## Quick Links
 - [Publications](publications.md)
 - [Curriculum Vitae](Nath_CV_Jan2025.pdf)
-- [Google Scholar](https://scholar.google.com/citations?user=YOUR_ID)
+- [Google Scholar](https://scholar.google.com/citations?user=J9FdsyYAAAAJ&hl=en)
 - [GitHub](https://github.com/AbhijnanNath)
 - [LinkedIn](https://linkedin.com/in/abhijnan-nath-737727169)
-
+- [Youtube Channel](https://linkedin.com/in/abhijnan-nath-737727169)
 ## Contact
 Email: abhijnan.nath@colostate.edu  
 Department of Computer Science  

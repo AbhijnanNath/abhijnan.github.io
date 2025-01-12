@@ -1,5 +1,5 @@
 title: "Abhijnan Nath"
-description: ""
+description: "Machine Learning and AI Alignment Researcher"
 remote_theme: pages-themes/minimal@v0.2.0
 plugins:
   - jekyll-remote-theme
@@ -8,3 +8,6 @@ logo: /assets/img/profile.png
 viewport: width=device-width, initial-scale=1
 show_downloads: false
 google_analytics: G-0WRNB6ZHTP
+github:
+  is_project_page: false   # This will hide the repository link
+  is_user_page: false     # This will hide the GitHub profile link
