@@ -9,6 +9,8 @@ I am a PhD candidate in Computer Science (AI/NLP) at Colorado State University, 
 What happens when AI begins to truly understand and align with human intentions? That's the question I aim to answer. I specialize in developing next-generation generative AI systems (or LLMs) that are not only intelligent but also deeply aligned with human values. My work spans aligning summaries of doctor-patient interactions to designing AI "thought-partners" for enhanced collaboration, with a focus on safety, alignment, and usability. For example, most users these days have a "frictionless" experience using LLMs---but my research asks the question of whether it is possible to train and align “frictive agents”---LLMs that can cross-examine and track ToM-based beliefs in multi-user settings. I led the development of **[AxomiyaBERTa](https://aclanthology.org/2023.findings-acl.739/)**, the *first* monolingual Assamese transformer-based language model, which set new benchmarks for low-resource language processing by leveraging Assamese-specific phonological signals in transfer learning.
 
 ## News
+- Feb' 25: Presented my research on “Friction” Agents at DARPA's Friction and Accountability in Conversational Transactions (FACT) PI Meeting in Stanford University!
+- Jan' 25 📝 Paper on Diverse Preference Learning (DPL) in LLMs accepted at NAACL 2025 Main Conference! 
 - 🎉 Best Paper Award at Educational Data Mining (EDM) 2024
 - 🎓 Received PhD Candidacy with Distinction, December 2024
 - 🏆 Awarded Evolutionary Computing and AI Graduate Fellowship 2024
@@ -24,7 +26,7 @@ What happens when AI begins to truly understand and align with human intentions?
   A novel approach to combining reward learning with preference optimization in language models.
 
 * **[DPL: Diverse Preference Learning Without A Reference Model](https://drive.google.com/file/d/1dFI_N0zgXF4YkawaIJqqoyEKn2IU9xEO/view?usp=sharing)**  
-  *Under Review*  
+  *NAACL Main 2025*  
   Pioneering work on preference learning that eliminates the need for reference models while maintaining diversity.
 
 * **[Okay, Let's Do This! Modeling Event Coreference with Generated Rationales](https://arxiv.org/pdf/2404.03196.pdf)** 🏆  
@@ -43,6 +45,7 @@ What happens when AI begins to truly understand and align with human intentions?
 ## Quick Links
 - [Publications](publications.md)
 - [Curriculum Vitae](Nath_CV_Jan2025.pdf)
+- [Research Statement](nath_research_statement_2025.pdf)
 - [Google Scholar](https://scholar.google.com/citations?user=J9FdsyYAAAAJ&hl=en)
 - [GitHub](https://github.com/AbhijnanNath)
 - [LinkedIn](https://linkedin.com/in/abhijnan-nath-737727169)
