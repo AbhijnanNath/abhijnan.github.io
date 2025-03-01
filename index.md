@@ -25,7 +25,7 @@ What happens when AI begins to truly understand and align with human intentions?
   *Under Review*  
   A novel approach to combining reward learning with preference optimization in language models.
 
-* **[DPL: Diverse Preference Learning Without A Reference Model](https://drive.google.com/file/d/1dFI_N0zgXF4YkawaIJqqoyEKn2IU9xEO/view?usp=sharing)**  
+* **[DPL: Diverse Preference Learning Without A Reference Model](https://drive.google.com/file/d/1N0vDYeeHic2dbISrtJAZfkYKmORTZNz2/view?usp=sharing)**  
   *NAACL Main 2025*  
   Pioneering work on preference learning that eliminates the need for reference models while maintaining diversity.
 
