@@ -21,8 +21,16 @@ What happens when AI begins to truly understand and align with human intentions?
 
 ## Selected Publications
 
+* **[Learning" Partner-Aware" Collaborators in Multi-Party Collaboration](https://arxiv.org/abs/2510.22462)**  
+  *Neurips 2025 Main Track*  
+  A novel approach to learning partner-aware and intentional collaborator agents via counterfactual regularization for multi-agent collaboration.
+
+* **[Frictional Agent Alignment Framework: Slow Down and Don't Break Things](https://aclanthology.org/2025.acl-long.542/)**  
+  *ACL 2025*  
+  An LLM alignment framework for learning an optimal intervention agent that guides a group of collaborator agents. 
+
 * **[Simultaneous Reward Distillation and Preference Learning: Get You a Language Model Who Can Do Both](https://arxiv.org/pdf/2410.08458)**  
-  *Under Review*  
+  *Preprint*  
   A novel approach to combining reward learning with preference optimization in language models.
 
 * **[DPL: Diverse Preference Learning Without A Reference Model](https://drive.google.com/file/d/1N0vDYeeHic2dbISrtJAZfkYKmORTZNz2/view?usp=sharing)**  
@@ -44,7 +52,7 @@ What happens when AI begins to truly understand and align with human intentions?
 
 ## Quick Links
 - [Publications](publications.md)
-- [Curriculum Vitae](Nath_CV_Jan2025.pdf)
+- [Curriculum Vitae](Nath_CV_short.pdf)
 - [Research Statement](nath_research_statement_2025_website.pdf)
 - [Google Scholar](https://scholar.google.com/citations?user=J9FdsyYAAAAJ&hl=en)
 - [GitHub](https://github.com/AbhijnanNath)
