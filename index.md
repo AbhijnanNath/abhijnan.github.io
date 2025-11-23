@@ -7,10 +7,16 @@ I am a PhD candidate in Computer Science (AI/NLP) at Colorado State University, 
 
 # My Research
 What happens when AI begins to truly understand and align with human intentions? That's the question I aim to answer. I specialize in developing next-generation generative AI systems (or LLMs) that are not only intelligent but also deeply aligned with human values. My work spans aligning summaries of doctor-patient interactions to designing AI "thought-partners" for enhanced collaboration, with a focus on safety, alignment, and usability. For example, most users these days have a "frictionless" experience using LLMs---but my research asks the question of whether it is possible to train and align “frictive agents”---LLMs that can cross-examine and track ToM-based beliefs in multi-user settings. I led the development of **[AxomiyaBERTa](https://aclanthology.org/2023.findings-acl.739/)**, the *first* monolingual Assamese transformer-based language model, which set new benchmarks for low-resource language processing by leveraging Assamese-specific phonological signals in transfer learning.
-
+ 
 ## News
+- May' 25: [Paper](https://openreview.net/forum?id=gMvARxotd6) on Friction Agent Alignment Framework (FAAF) accepted at ACL 2025 Main Conference. [Code](https://github.com/AbhijnanNath/FAAF_ACL) for the curious! 
+- April' 25: 🏆 Awarded the Wim Bohm and Partners Ph.D. Award, 2025 by the Department of Computer Science, Colorado State University for meritorious accomplishments in the Ph.D. Program.
+- April' 25: Presented [DPL](https://aclanthology.org/2025.naacl-long.190/) on Diverse Preference Learning (oral) at NAACL 2025 Main Conference. 
+- April' 25: Will be joining Amazon as Applied Science Intern in July, 25 . Supervised by Yan Gao.
+- April' 25: Started working with [Cresta Intelligence](https://cresta.com/) as a PhD Machine Learning Research Intern to design high-performance contact center AI agents. 
 - Feb' 25: Presented my research on “Friction” Agents at DARPA's Friction and Accountability in Conversational Transactions (FACT) PI Meeting in Stanford University!
-- Jan' 25 📝 Paper on Diverse Preference Learning (DPL) in LLMs accepted at NAACL 2025 Main Conference! 
+- Jan' 25 📝 Paper on Diverse Preference Learning (DPL) in LLMs accepted at NAACL 2025 Main Conference!
+- Jan' 25 🏆 Awarded Ph.D. Candidacy — getting closer to the goal! 
 - 🎉 Best Paper Award at Educational Data Mining (EDM) 2024
 - 🎓 Received PhD Candidacy with Distinction, December 2024
 - 🏆 Awarded Evolutionary Computing and AI Graduate Fellowship 2024
