@@ -83,3 +83,23 @@ body {
   }
 }
 
+/* Rebalance desktop layout */
+@media screen and (min-width: 801px) {
+
+  /* Make the whole page wider */
+  .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* Make the left sidebar slimmer */
+  header {
+    width: 200px;      /* was ~250+ */
+  }
+
+  /* Move the text column left + allow full width */
+  section {
+    margin-left: 220px;   /* just a bit more than header width */
+    max-width: 950px;     /* increase/decrease to taste */
+  }
+}
