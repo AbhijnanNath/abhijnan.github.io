@@ -60,3 +60,26 @@ body {
 .index-content {
     font-size: 0.9em; /* Adjust this value as needed */
 }
+
+
+/* Wider layout on larger screens */
+@media screen and (min-width: 801px) {
+  /* Make the whole page wider */
+  .wrapper {
+    max-width: 1200px;   /* try 1000–1200; adjust to taste */
+    margin: 0 auto;
+  }
+
+  /* Keep the left column reasonable */
+  header {
+    width: 260px;        /* default is ~220–250; tweak if needed */
+  }
+
+  /* Let the right-hand text area breathe */
+  section {
+    margin-left: 280px;  /* a bit more than header width */
+    width: auto;
+    max-width: 850px;    /* increase/decrease for wider/narrower text */
+  }
+}
+
