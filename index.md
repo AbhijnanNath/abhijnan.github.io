@@ -24,11 +24,11 @@ In the past, I led the development of **[AxomiyaBERTa](https://aclanthology.org/
 - Nov' 25: Gave an invited talk at [NSF iSAT](https://www.colorado.edu/research/ai-institute/) on my latest work in partner-aware LLMS. 
 - Oct' 25: Successfully wrapped up PhD Applied Science internship at [Amazon Science](https://www.amazon.science/) with my incredible mentors Alireza Bagheri Garakani and Fan Yang. 
 - Oct' 25: [Paper](https://arxiv.org/abs/2510.22462) on Learning "Partner-Aware" Collaborators in Multi-Party Collaboration accepted at NeurIPS 2025 Main Track. [Code](https://github.com/csu-signal/ICR) 
-- Jul' 25: Successfully wrapped up internship at [Cresta Intelligence](https://www.amazon.science/) under the mentorship of [Chuan Wang] (https://www.linkedin.com/in/cwang24/) 
+- Jul' 25: Successfully wrapped up internship at [Cresta Intelligence](https://www.amazon.science/) under the mentorship of [Chuan Wang](https://www.linkedin.com/in/cwang24/) 
 - May' 25: [Paper](https://openreview.net/forum?id=gMvARxotd6) on Friction Agent Alignment Framework (FAAF) accepted at ACL 2025 Main Conference. [Code](https://github.com/AbhijnanNath/FAAF_ACL) for the curious! 
 - April' 25: 🏆 Awarded the Wim Bohm and Partners Ph.D. Award, 2025 by the Department of Computer Science, Colorado State University for meritorious accomplishments in the Ph.D. Program.
 - April' 25: Presented [DPL](https://aclanthology.org/2025.naacl-long.190/) on Diverse Preference Learning (oral) at NAACL 2025 Main Conference. 
-- April' 25: Will be joining Amazon as Applied Science Intern in July, 25 . Supervised by Yan Gao.
+- April' 25: Will be joining Amazon as Applied Science Intern in July, 25 .  
 - April' 25: Started working with [Cresta Intelligence](https://cresta.com/) as a PhD Machine Learning Research Intern to design high-performance contact center AI agents. 
 - Feb' 25: Presented my research on “Friction” Agents at DARPA's Friction and Accountability in Conversational Transactions (FACT) PI Meeting in Stanford University!
 - Jan' 25 📝 Paper on Diverse Preference Learning (DPL) in LLMs accepted at NAACL 2025 Main Conference!
