@@ -8,6 +8,29 @@ github:
 
 # Publications
 
+
+
+* **[Learning" Partner-Aware" Collaborators in Multi-Party Collaboration](https://arxiv.org/abs/2510.22462)**  
+  *Neurips 2025 Main Track*   Authors
+Abhijnan Nath, Nikhil Krishnaswamy
+ 
+* **[Frictional Agent Alignment Framework: Slow Down and Don't Break Things](https://aclanthology.org/2025.acl-long.542/)**  
+  *ACL 2025*   Authors
+Abhijnan Nath, Carine Graff, Andrei Bachinin, Nikhil Krishnaswamy
+
+* **[Let's Roleplay: Examining LLM Alignment in Collaborative Dialogues](https://arxiv.org/abs/2509.05882)**  
+  *ORIGen Workshop @ COLM 2025*   Authors
+Abhijnan Nath, Carine Graff, Andrei Bachinin, Nikhil Krishnaswamy
+
+
+ * **[Dynamic Epistemic Friction in Dialogue](https://openreview.net/forum?id=YXYhSodctv)**  
+  *CoNLL 2025*   Authors
+Timothy Obiso
+ 
+, Kenneth Lai, **Abhijnan Nath**, Nikhil Krishnaswamy, James Pustejovsky
+
+
+
 1. **Simultaneous Reward Distillation and Preference Learning: Get You a Language Model Who Can Do Both**  
    *Abhijnan Nath*, Changsoo Jung, Ethan Seefried, Nikhil Krishnaswamy  
    *(Under Review)*  
@@ -15,8 +38,8 @@ github:
 
 2. **DPL: Diverse Preference Learning Without A Reference Model**  
    *Abhijnan Nath*, Andrey Volozin, Saumajit Saha, Albert Aristotle Nanda, Galina Grunin, Rahul Bhotika, Nikhil Krishnaswamy  
-   *(Under Review)*  
-   [Preprint](https://drive.google.com/file/d/1dFI_N0zgXF4YkawaIJqqoyEKn2IU9xEO/view?usp=sharing)
+   *(Oral, Published at NAACL Main 2025)* 
+   [Paper](https://aclanthology.org/2025.naacl-long.190/)
 
 3. **“Any Other Thoughts, Hedgehog?” Linking Deliberation Chains in Collaborative Dialogues**  
    *Abhijnan Nath*, Videep Venkatesha, Mariah Bradford, Avyakta Chelle, Austin Collin Youngren, Carlos Mabrey, Nathaniel Blanchard, Nikhil Krishnaswamy  
