@@ -69,7 +69,7 @@ In the past, I led the development of **[AxomiyaBERTa](https://aclanthology.org/
   Proposed a novel task of linking reasoning chains in multi-agent collaborative dialogues.  
   [Code](https://github.com/csu-signal/ProbingDelibration)
 
-[View all publications →](publications)
+[View all publications →](publications_auto)
 
 
 ## Quick Links
