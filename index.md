@@ -3,28 +3,58 @@ layout: default
 ---
 # Welcome!
  
-I am a PhD candidate in Computer Science (AI/NLP) at Colorado State University, advised by [Dr. Nikhil Krishnaswamy](https://www.nikhilkrishnaswamy.com/) at the [SIGNAL Lab](https://www.signallab.ai/people). My research focuses on training AI systems for effective multi-agent collaboration through friction-aware alignment and partner-aware learning. I am grateful to be supported by the [Wim Böhm Ph.D. Fellowship in Computer Science](https://natsci.source.colostate.edu/ram-legacy-wim-bohm/) in 2025, the [Evolutionary Computing and Artificial Intelligence Fellowship](https://compsci.colostate.edu/scholarships-fellowships/) in 2024 and multiple DARPA grants including the [Friction for Accountability in Conversational Transactions](https://www.darpa.mil/research/programs/friction-for-accountability-in-conversational-transactions) (FACT) program. In summer-fall 2025,  I worked in RL for personalized recommendation at [Amazon Science](https://www.amazon.science/). I also worked with [Cresta Intelligence](https://cresta.com/) on robust email writing agents using multi-turn RL in summer 2025. Previously, I contributed to efficient preference alignment in LLMs for healthcare applications at [Optum AI](https://www.optumlabs.com/work/artificial-intelligence.html). 
-
-**I am currently seeking Full-Time Research Scientist/Machine Learning Engineer positions.**
+I recently completed my PhD in Computer Science (AI/ML) at
+Colorado State University, advised by
+[Dr. Nikhil Krishnaswamy](https://www.nikhilkrishnaswamy.com/) at
+the [SIGNAL Lab](https://www.signallab.ai/people). I am currently
+an Applied ML Research Scientist at Adobe on the
+[Brand Intelligence](https://business.adobe.com/products/brand-intelligence.html)
+team. My PhD research, supported by DARPA, NSF, the U.S. Army
+Research Office, and ARPA-H, has appeared at NeurIPS, ACL, EMNLP,
+NAACL, and AAMAS. My [PhD dissertation](https://mountainscholar.org/items/9afd3e1e-726c-4897-b5fa-1c59af2494ed) work on friction-aware alignment was
+highlighted in the
+[Microsoft New Future of Work Report 2025](https://www.microsoft.com/en-us/research/project/the-new-future-of-work/)
+as a key direction for collaborative AI systems.
 
 # My Research
-My work brings three strands together to address long-horizon, multi-turn alignment of LLMs in multi-agent settings — whether the agent is human or machine. The broader goal is to move toward true agency: systems that reason about consequences, interactions, and values over time, rather than optimizing myopic reward signals.
-
-First — **causal generalization**. I study how LLMs can transfer an understanding of user values to unseen situations, especially during long collaborations where trajectories diverge and standard evaluations (LLM judges, static reward models) break down. Instead of evaluating agents in isolation, my work studies them interactionally — asking how behavior changes when agents respond to one another. In **[Roleplay Collaboration](https://arxiv.org/abs/2509.05882)**, I introduced a counterfactual evaluation framework that simulates alternative dialogue loops to measure the marginal contribution of adding a new agent to the team — particularly important when adding an agent has cost and uncertain ripple effects.
-
-Second — **principled credit assignment**. I design learning objectives that attribute outcomes to the mechanisms that actually caused them, while discounting misleading or adversarial contributions. This allows policies to reason about short- vs. long-term tradeoffs transparently. In **[Interruptible Collaborative Roleplayer](https://arxiv.org/abs/2510.22462)** (**NeurIPS 2025**), I developed an RL objective that operationalizes intentionality: models learn to remain consistent under counterfactual contexts, enabling constrained, stable policy updates when we already know how the agent should behave.
-
-Third — **cognitively grounded collaboration**. Drawing from BDI, pragmatics, and cognitive modeling, I turn dialogue signals into richer supervision so systems can adapt to evolving, user-specific preferences. Real collaborations often stall in “frictive states” — moments of belief misalignment or uncertainty. In the **[Frictional Agent Alignment Framework](https://aclanthology.org/2025.acl-long.542/)** (**ACL 2025**), I introduced an offline algorithm that detects and models such moments, helping LLMs resolve disagreement and guide groups toward common ground.
-
-In the past, I led the development of **[AxomiyaBERTa](https://aclanthology.org/2023.findings-acl.739/)**, the *first* monolingual Assamese transformer-based language model, which set new benchmarks for low-resource language processing by leveraging Assamese-specific phonological signals in transfer learning.
+My research focuses on reinforcement learning for aligning language
+models to social intelligence and human preferences in multi-turn,
+multi-agent settings. I work across three themes: **causal
+generalization** — how agents transfer values to unseen situations
+and evaluate each other interactionally
+([Collaborate, Deliberate, Evaluate: How LLM Alignment Affects Coordinated Multi-Agent Outcomes](https://arxiv.org/abs/2509.05882), AAMAS 2026); **principled
+credit assignment** — learning objectives that attribute outcomes to
+the mechanisms that caused them, from token-level coalitional credit
+for search and recommendation
+([OSPO](https://arxiv.org/abs/2601.08403), preprint) to turn-level
+epistemic credit for multi-turn information-seeking agents
+(Epistemic Decision Processes) and counterfactual
+regularization for partner-aware agents
+([ICR](https://arxiv.org/abs/2510.22462), NeurIPS 2025); and
+**grounded collaboration** — turning dialogue signals
+into supervision for adapting to evolving preferences
+([FAAF](https://aclanthology.org/2025.acl-long.542/), ACL 2025),
+with [CRAFT](https://arxiv.org/abs/2603.25268) as a grounded
+multi-agent coordination benchmark for evaluating pragmatic
+communication under partial information. As part of the [NSF iSAT program](https://www.colorado.edu/research/ai-institute/abhijnan-nath),
+I led the initial training and evaluation of collaborative AI
+agents with the goal of delivering real-time learning support
+in K-12 classrooms across the US. I also led
+**[AxomiyaBERTa](https://aclanthology.org/2023.findings-acl.739/)**,
+the first monolingual Assamese transformer model for low-resource
+language processing.
 
  
 ## News and Events
+- May' 26: Joined Adobe as Applied ML Research Scientist on the [Brand Intelligence](https://business.adobe.com/products/brand-intelligence.html) team.
+- May' 26: PhD conferred, Department of Computer Science, Colorado State University. [Dissertation.](https://mountainscholar.org/items/9afd3e1e-726c-4897-b5fa-1c59af2494ed)
+- Feb' 26: Successfully defended PhD dissertation 
 - Dec' 25: Had an incredible experience presenting at NeurIPS 2025 and meeting with the legendary Rich Sutton. 
 - Nov' 25: Gave an invited talk at [NSF iSAT](https://www.colorado.edu/research/ai-institute/) on my latest work in partner-aware LLMS. 
 - Oct' 25: Successfully wrapped up PhD Applied Science internship at [Amazon Science](https://www.amazon.science/) with my incredible mentors Alireza Bagheri Garakani and Fan Yang. 
 - Oct' 25: [Paper](https://arxiv.org/abs/2510.22462) on Learning "Partner-Aware" Collaborators in Multi-Party Collaboration accepted at NeurIPS 2025 Main Track. [Code](https://github.com/csu-signal/ICR) 
-- Jul' 25: Successfully wrapped up internship at [Cresta Intelligence](https://www.amazon.science/) under the mentorship of [Chuan Wang](https://www.linkedin.com/in/cwang24/) 
+- Jul' 25: Successfully wrapped up internship at [Cresta Intelligence](https://cresta.com/) under the mentorship
+  of [Chuan Wang](https://www.linkedin.com/in/cwang24/)
 - May' 25: [Paper](https://openreview.net/forum?id=gMvARxotd6) on Friction Agent Alignment Framework (FAAF) accepted at ACL 2025 Main Conference. [Code](https://github.com/AbhijnanNath/FAAF_ACL) for the curious! 
 - April' 25: 🏆 Awarded the Wim Bohm and Partners Ph.D. Award, 2025 by the Department of Computer Science, Colorado State University for meritorious accomplishments in the Ph.D. Program.
 - April' 25: Presented [DPL](https://aclanthology.org/2025.naacl-long.190/) on Diverse Preference Learning (oral) at NAACL 2025 Main Conference. 
@@ -41,8 +71,21 @@ In the past, I led the development of **[AxomiyaBERTa](https://aclanthology.org/
 - 📝 Paper accepted at LREC-COLING 2024
 
 
-## Selected Publications
+## Selected Publications and Preprints
+ 
+* **[CRAFT: Grounded Multi-Agent Coordination Under Partial Information](https://arxiv.org/abs/2603.25268)**
+  *Preprint*
+  A multi-agent coordination benchmark evaluating pragmatic communication under partial observability, revealing failure modes in frontier LLMs.
 
+* **[Owen-Shapley Policy Optimization for Generative Search LLMs](https://arxiv.org/abs/2601.08403)**
+  *Preprint*
+  A principled RL framework that redistributes sequence-level rewards via coalitional credit assignment for personalized search and recommendation.
+
+* **[Collaborate, Deliberate, Evaluate: How LLM Alignment Affects Coordinated Multi-Agent Outcomes](https://arxiv.org/abs/2509.05882)**
+  *AAMAS 2026*
+  A counterfactual evaluation framework for measuring the marginal contribution of adding an agent to a collaborative team.
+
+ 
 * **[Learning" Partner-Aware" Collaborators in Multi-Party Collaboration](https://arxiv.org/abs/2510.22462)**  
   *Neurips 2025 Main Track*  
   A novel approach to learning partner-aware and intentional collaborator agents via counterfactual regularization for multi-agent collaboration.
@@ -82,7 +125,5 @@ In the past, I led the development of **[AxomiyaBERTa](https://aclanthology.org/
 - [Youtube Channel](https://www.youtube.com/@avign5291)
 
 ## Contact
-Email: abhijnan.nath@colostate.edu  
-Department of Computer Science  
-Colorado State University  
-Fort Collins, CO 80523
+Applied ML Research Scientist, Adobe Research
+Email: abhijnann@adobe.com | abhijnan.nath@colostate.edu
