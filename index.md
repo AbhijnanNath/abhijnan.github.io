@@ -116,6 +116,7 @@ language processing.
 
 
 ## Quick Links
+- [Research Notes / Blog](/blog/)
 - [Publications](publications_auto.md)
 - [Curriculum Vitae](Nath_CV_short.pdf)
 - [Research Statement](nath_research_statement_2025_website.pdf)

@@ -1,0 +1,724 @@
+/* =========================================================
+   PPO debugging note — "run console" theme
+   Palette is derived from the three runs in the figures:
+   blue = terminal credit, orange = multi-turn + LLM critic,
+   green = multi-turn + structured critic.
+   ========================================================= */
+
+:root {
+  /* ground */
+  --void:      #0a0e14;
+  --panel:     #101823;
+  --panel-hi:  #16202d;
+  --panel-in:  #0c1219;
+  --rule:      #22303f;
+  --rule-soft: #1a2532;
+
+  /* type */
+  --ink:       #dae4ef;
+  --ink-dim:   #aebccb;
+  --muted:     #8296ab;
+  --faint:     #5f7286;
+
+  /* run signals */
+  --run-a:     #3fa0e0;  /* terminal credit + token-level PPO */
+  --run-b:     #f2851f;  /* true multi-turn GAE + LLM critic  */
+  --run-c:     #4fc45e;  /* true multi-turn GAE + structured  */
+
+  --run-a-dim: rgba(63,160,224,0.13);
+  --run-b-dim: rgba(242,133,31,0.12);
+  --run-c-dim: rgba(79,196,94,0.12);
+
+  /* metrics */
+  --measure:   720px;
+  --column:    1060px;
+  --rail:      216px;
+  --gutter:    56px;
+
+  --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  --sans: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  --cond: "IBM Plex Sans Condensed", "IBM Plex Sans", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 96px;
+}
+
+body {
+  margin: 0;
+  background: var(--void);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+
+  /* faint instrument grid */
+  background-image:
+    linear-gradient(to right, rgba(255,255,255,0.016) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,0.016) 1px, transparent 1px);
+  background-size: 64px 64px;
+  background-attachment: fixed;
+}
+
+::selection { background: rgba(63,160,224,0.28); }
+
+a {
+  color: var(--run-a);
+  text-decoration-color: rgba(63,160,224,0.4);
+  text-underline-offset: 3px;
+}
+a:hover { text-decoration-color: var(--run-a); }
+
+:focus-visible {
+  outline: 2px solid var(--run-a);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* ---------------------------------------------------------
+   Status bar
+   --------------------------------------------------------- */
+
+.statusbar {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 60;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 0 20px;
+  background: rgba(10,14,20,0.88);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--rule-soft);
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  color: var(--faint);
+  text-transform: uppercase;
+}
+
+.statusbar .sb-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--run-c);
+  box-shadow: 0 0 0 3px rgba(79,196,94,0.14);
+  flex: none;
+}
+
+.statusbar .site-home {
+  color: var(--ink-dim);
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+.statusbar .site-home:hover { color: var(--run-b); }
+
+.statusbar .sb-id { color: var(--ink-dim); }
+.statusbar .sb-sep { color: var(--rule); }
+.statusbar .sb-right { margin-left: auto; color: var(--muted); }
+
+.progress-track {
+  position: absolute;
+  left: 0; right: 0; bottom: -1px;
+  height: 2px;
+  background: transparent;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--run-a) 0%, var(--run-b) 55%, var(--run-c) 100%);
+  transition: width 0.12s linear;
+}
+
+/* ---------------------------------------------------------
+   Layout
+   --------------------------------------------------------- */
+
+.page {
+  width: min(calc(var(--rail) + var(--gutter) + var(--column)), calc(100% - 48px));
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: var(--rail) minmax(0, 1fr);
+  gap: var(--gutter);
+  align-items: start;
+}
+
+/* ---------------------------------------------------------
+   Hero
+   --------------------------------------------------------- */
+
+.hero {
+  padding: 118px 0 0;
+}
+
+.hero-inner {
+  grid-column: 1 / -1;
+  padding-bottom: 54px;
+  border-bottom: 1px solid var(--rule);
+}
+
+.kicker {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 0 0 26px;
+  padding: 6px 12px 6px 10px;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  background: var(--panel);
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.kicker::before {
+  content: "";
+  flex: none;
+  width: 6px;
+  height: 6px;
+  margin-top: 4px;
+  border-radius: 1px;
+  background: var(--run-b);
+}
+
+h1, h2, h3 {
+  font-family: var(--cond);
+  line-height: 1.08;
+  letter-spacing: -0.015em;
+}
+
+h1 {
+  max-width: 19ch;
+  margin: 0;
+  font-size: clamp(2.35rem, 5.4vw, 4.05rem);
+  font-weight: 600;
+  color: #f0f6fc;
+}
+
+.dek {
+  max-width: 660px;
+  margin: 30px 0 0;
+  color: var(--ink-dim);
+  font-size: clamp(1rem, 1.6vw, 1.1rem);
+  line-height: 1.66;
+}
+
+.dek a {
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(63,160,224,0.55);
+  padding-bottom: 1px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.dek a:hover {
+  color: var(--run-a);
+  border-bottom-color: var(--run-a);
+}
+
+.meta {
+  margin: 26px 0 0;
+  color: var(--faint);
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.02em;
+}
+
+/* run legend — teaches the colour code used across the page */
+.runstrip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 34px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.runstrip li {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 7px 13px 7px 11px;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  background: var(--panel);
+  font-family: var(--mono);
+  font-size: 11.5px;
+  letter-spacing: 0.02em;
+}
+
+.runstrip li::before {
+  content: "";
+  width: 14px;
+  height: 3px;
+  border-radius: 2px;
+  background: currentColor;
+  flex: none;
+}
+
+.runstrip .r-a { color: var(--run-a); }
+.runstrip .r-b { color: var(--run-b); }
+.runstrip .r-c { color: var(--run-c); }
+.runstrip li span { color: var(--muted); }
+
+/* ---------------------------------------------------------
+   Rail — the signature element: a scroll-linked run log
+   --------------------------------------------------------- */
+
+.rail {
+  position: sticky;
+  top: 78px;
+  padding: 52px 0 40px;
+  max-height: calc(100vh - 96px);
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--rule) transparent;
+}
+
+.rail::-webkit-scrollbar { width: 4px; }
+.rail::-webkit-scrollbar-thumb { background: var(--rule); border-radius: 4px; }
+
+.rail-head {
+  margin: 0 0 14px 13px;
+  color: var(--faint);
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.rail ol {
+  margin: 0;
+  padding: 0 0 0 13px;
+  list-style: none;
+  border-left: 1px solid var(--rule-soft);
+}
+
+.rail a {
+  position: relative;
+  display: grid;
+  grid-template-columns: 22px 1fr;
+  gap: 8px;
+  padding: 5px 0;
+  color: var(--faint);
+  font-family: var(--mono);
+  font-size: 11.5px;
+  line-height: 1.35;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.rail a::before {
+  content: "";
+  position: absolute;
+  left: -14px;
+  top: 50%;
+  width: 1px;
+  height: 0;
+  background: var(--run-a);
+  transform: translateY(-50%);
+  transition: height 0.2s ease;
+}
+
+.rail a .n { color: var(--rule); transition: color 0.15s ease; }
+
+.rail a:hover { color: var(--ink-dim); }
+.rail a:hover .n { color: var(--muted); }
+
+.rail a.is-active { color: var(--ink); }
+.rail a.is-active .n { color: var(--run-a); }
+.rail a.is-active::before { height: 100%; }
+
+/* ---------------------------------------------------------
+   Body
+   --------------------------------------------------------- */
+
+main {
+  min-width: 0;
+  padding: 52px 0 96px;
+}
+
+section { margin: 0 0 58px; }
+
+main > section > * { max-width: var(--measure); }
+
+h2 {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  margin: 68px 0 22px;
+  font-size: clamp(1.5rem, 2.7vw, 2.05rem);
+  font-weight: 600;
+  color: #eef4fb;
+}
+
+h2 .h2n {
+  flex: none;
+  color: var(--run-a);
+  font-family: var(--mono);
+  font-size: 0.62em;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+h3 {
+  margin: 38px 0 14px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+p { margin: 0 0 20px; color: var(--ink-dim); }
+
+p strong { color: var(--ink); font-weight: 600; }
+
+em { color: var(--ink); font-style: italic; }
+
+.lead {
+  color: var(--ink);
+  font-size: 1.16rem;
+  line-height: 1.62;
+}
+
+/* pull quotes */
+blockquote {
+  position: relative;
+  margin: 34px 0;
+  padding: 22px 24px 22px 26px;
+  border: 1px solid var(--rule);
+  border-left: 2px solid var(--run-a);
+  border-radius: 3px;
+  background: linear-gradient(90deg, var(--run-a-dim), transparent 62%), var(--panel);
+  color: var(--ink);
+  font-family: var(--cond);
+  font-size: 1.22rem;
+  line-height: 1.45;
+  letter-spacing: -0.005em;
+}
+
+blockquote p { color: inherit; margin-bottom: 14px; }
+blockquote p:last-child { margin-bottom: 0; }
+blockquote strong { color: var(--run-a); font-weight: 600; }
+
+/* ---------------------------------------------------------
+   Code / math panels
+   --------------------------------------------------------- */
+
+.math {
+  position: relative;
+  overflow-x: auto;
+  margin: 26px 0;
+  padding: 20px 22px 20px 24px;
+  border: 1px solid var(--rule);
+  border-left: 2px solid var(--run-b);
+  border-radius: 3px;
+  background: var(--panel-in);
+  color: #c8d6e5;
+  font-family: var(--mono);
+  font-size: 13.5px;
+  line-height: 1.75;
+  white-space: pre;
+  tab-size: 2;
+}
+
+.math::-webkit-scrollbar { height: 6px; }
+.math::-webkit-scrollbar-thumb { background: var(--rule); border-radius: 6px; }
+
+.inline-math {
+  padding: 0.12em 0.4em;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  background: var(--panel-in);
+  color: #bcd4e8;
+  font-family: var(--mono);
+  font-size: 0.86em;
+  white-space: nowrap;
+}
+
+/* ---------------------------------------------------------
+   Lessons + callouts
+   --------------------------------------------------------- */
+
+.lesson {
+  position: relative;
+  margin: 28px 0;
+  padding: 20px 24px 20px 40px;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  background: var(--panel);
+  color: var(--ink-dim);
+  font-size: 0.98rem;
+  transition: border-color 0.18s ease, background 0.18s ease;
+}
+
+.lesson::before {
+  content: "";
+  position: absolute;
+  left: 22px;
+  top: 22px;
+  bottom: 22px;
+  width: 3px;
+  border-radius: 2px;
+  background: var(--run-b);
+  opacity: 0.85;
+}
+
+.lesson:hover {
+  border-color: #2d3d4f;
+  background: var(--panel-hi);
+
+
+}
+
+.csg-setup {
+  width: min(720px, 100%);
+  padding: 18px 24px 18px 26px;
+  margin: 34px 0 48px;
+
+  background: #111a26;
+  border: 1px solid #26384b;
+  border-left: 3px solid #e8792e;
+  border-radius: 2px;
+
+  color: #aebdca;
+  line-height: 1.65;
+}
+
+.csg-setup strong {
+  display: block;
+  margin-bottom: 6px;
+
+  color: #ff8a32;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+}
+
+.lesson strong {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--run-b);
+  font-family: var(--mono);
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* The closing checklist uses full sentences as labels, so it keeps
+   sentence case instead of the short all-caps "LESSON N" treatment. */
+#s13 .lesson strong {
+  font-size: 13.5px;
+  letter-spacing: 0.01em;
+  text-transform: none;
+}
+
+.callout {
+  margin: 32px 0;
+  padding: 22px 24px;
+  border: 1px solid rgba(79,196,94,0.28);
+  border-radius: 3px;
+  background: linear-gradient(180deg, var(--run-c-dim), transparent), var(--panel);
+  color: var(--ink);
+}
+
+.callout strong {
+  color: var(--run-c);
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* ---------------------------------------------------------
+   Trajectory diagram
+   --------------------------------------------------------- */
+
+.credit-diagram {
+  margin: 36px 0;
+  padding: 26px 28px 22px;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  background:
+    radial-gradient(120% 100% at 0% 0%, rgba(63,160,224,0.05), transparent 60%),
+    var(--panel);
+}
+
+.diagram-title {
+  margin-bottom: 14px;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.flow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 7px;
+  margin: 0 0 26px;
+  font-family: var(--mono);
+  font-size: 12.5px;
+}
+
+.flow:last-child { margin-bottom: 4px; }
+
+.node {
+  padding: 7px 12px;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  background: var(--panel-in);
+  color: var(--ink-dim);
+  white-space: nowrap;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.arrow { color: var(--rule); font-weight: 500; }
+
+/* the axis credit *should* live on */
+.flow-turn .node {
+  border-color: rgba(79,196,94,0.34);
+  color: #cfe9d4;
+}
+.flow-turn .node:hover { border-color: var(--run-c); color: #eafaec; }
+.flow-turn .arrow { color: rgba(79,196,94,0.5); }
+
+/* the axis the old machinery actually walked */
+.flow-token .node {
+  border-style: dashed;
+  border-color: var(--rule);
+  color: var(--muted);
+}
+.flow-token .arrow { color: var(--faint); }
+
+/* ---------------------------------------------------------
+   Figures
+   --------------------------------------------------------- */
+
+.figure-wide {
+  width: 100%;
+  max-width: 100%;
+  margin: 52px 0 58px;
+  padding: 10px 10px 0;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  background: var(--panel);
+}
+
+.figure-wide img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+  background: var(--panel-in);
+}
+
+figcaption {
+  width: 100%;
+  max-width: var(--measure);
+  margin: 0;
+  padding: 14px 4px 16px;
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.6;
+}
+
+figcaption strong {
+  display: inline-block;
+  margin-right: 8px;
+  padding: 2px 7px;
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  background: var(--panel-in);
+  color: var(--run-a);
+  font-family: var(--mono);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  vertical-align: 1px;
+}
+
+/* ---------------------------------------------------------
+   Misc
+   --------------------------------------------------------- */
+
+.small { color: var(--faint); font-size: 0.88rem; }
+
+hr {
+  max-width: var(--measure);
+  margin: 58px 0;
+  border: 0;
+  border-top: 1px solid var(--rule);
+}
+
+footer {
+  border-top: 1px solid var(--rule);
+}
+
+.footer-inner {
+  grid-column: 1 / -1;
+  padding: 26px 0 72px;
+  color: var(--faint);
+  font-family: var(--mono);
+  font-size: 11.5px;
+  letter-spacing: 0.03em;
+}
+
+/* ---------------------------------------------------------
+   Responsive
+   --------------------------------------------------------- */
+
+@media (max-width: 1080px) {
+  .grid { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .rail { display: none; }
+  .page { width: min(var(--column), calc(100% - 44px)); }
+}
+
+@media (max-width: 700px) {
+  body { font-size: 16px; background-size: 44px 44px; }
+  .page { width: calc(100% - 28px); }
+  .hero { padding-top: 84px; }
+  .hero-inner { padding-bottom: 40px; }
+  h1 { max-width: none; letter-spacing: -0.02em; }
+  h2 { gap: 10px; margin-top: 52px; }
+  main { padding-top: 40px; }
+  .figure-wide { margin: 38px 0 42px; padding: 8px 8px 0; }
+  .credit-diagram { padding: 20px 18px 16px; }
+  .math { font-size: 12.5px; padding: 16px 18px; }
+  .flow { font-size: 11.5px; }
+  .statusbar .sb-right { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+@media print {
+  body { background: #fff; color: #000; }
+  .statusbar, .rail { display: none; }
+}
